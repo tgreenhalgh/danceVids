@@ -5,7 +5,6 @@ $('.upload-btn').on('click', function (){
 });
 
 $('#upload-input').on('change', function(){
-
   var files = $(this).get(0).files;
 
   if (files.length > 0){
@@ -36,7 +35,6 @@ $('#upload-input').on('change', function(){
 
         // listen to the 'progress' event
         xhr.upload.addEventListener('progress', function(evt) {
-
           if (evt.lengthComputable) {
             // calculate the percentage of upload completed
             var percentComplete = evt.loaded / evt.total;
@@ -50,14 +48,10 @@ $('#upload-input').on('change', function(){
             if (percentComplete === 100) {
               $('.progress-bar').html('Done');
             }
-
           }
-
         }, false);
-
         return xhr;
       }
     });
-
   }
 });
