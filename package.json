@@ -1,0 +1,23 @@
+{
+  "name": "dancevids",
+  "version": "1.0.0",
+  "description": "upload team videos, variable speed playback, team privacy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgreenhalgh/danceVids.git"
+  },
+  "author": "thomas greenhalgh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tgreenhalgh/danceVids/issues"
+  },
+  "homepage": "https://github.com/tgreenhalgh/danceVids#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "formidable": "^1.1.1"
+  }
+}
