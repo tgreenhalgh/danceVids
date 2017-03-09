@@ -17,7 +17,7 @@ app.post('/upload', function(req, res){
   // specify that we want to allow the user to upload multiple files in a single request
   form.multiples = true;
 
-  // store all uploads in the /uploads directory
+  // store all uploads in the /videos directory
   form.uploadDir = path.join(__dirname, '/videos');
 
   // every time a file has been uploaded successfully,
