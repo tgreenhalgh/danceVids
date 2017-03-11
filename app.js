@@ -4,10 +4,15 @@ var path = require('path');
 var formidable = require('formidable');
 var fs = require('fs');
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/node', express.static(path.join(__dirname, 'node_modules')));
 
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index.html'));
+});
+
+app.get('/react', function(req, res) {
+  res.sendFile(path.join(__dirname, 'views/rindex.html'));
 });
 
 app.post('/upload', function(req, res){

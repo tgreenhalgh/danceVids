@@ -21,6 +21,10 @@
     "formidable": "^1.1.1",
     "jsx": "^0.9.89",
     "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-player": "^0.14.3"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
   }
 }
