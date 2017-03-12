@@ -1,3 +1,7 @@
+// entry point for webpack
+// webpack public/javascript/ClientApp.js public/javascript/bundle.js
+// NODE_ENV=production webpack -p public/javascript/ClientApp.js public/javascript/bundle.js
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MyTitle from './MyTitle';
@@ -13,7 +17,7 @@ var MyFirstComponent = React.createClass({
         MyTitleFactory({ title: 'text 1 text 2 text 3', color: 'peru' }),
         MyTitleFactory({ title: 'text 4 text 5 text 6', color: 'mediumaquamarine' }),
         MyTitleFactory({ title: 'text 7 text 8 text 9', color: 'rebeccapurple' }),
-        MyTitleFactory({ title: 'text 10 text 11 text 12', color: 'darkred' })
+        MyTitleFactory({ title: 'text 10 text 11 text 12', color: 'dodgerblue' })
         )
       );
   }

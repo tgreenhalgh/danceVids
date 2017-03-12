@@ -1,5 +1,6 @@
 //Commonjs was (node way)
 // var React = require('react');
+
 // ES6 modules way
 import React from 'react';
 
