@@ -38,7 +38,6 @@ var MyTitle = React.createClass({
       <div>
         <h1 style= { style }>
           { this.props.title.toUpperCase() }
-        }
         </h1>
       </div>
     );
