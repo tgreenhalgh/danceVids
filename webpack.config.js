@@ -28,6 +28,10 @@ module.exports = {
   module: { // all of transforms want webpack to apply
     rules: [ // if passes this rule, apply this transform
       {
+        // can exclude things
+        // exclude: /node_modules/,
+        // but more accurate to include what you really want
+        include: path.resolve(__dirname, 'public/javascript'),
         // if it ends in .js
         test: /\.js$/,
         //apply this loader

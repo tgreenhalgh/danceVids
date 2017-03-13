@@ -4,6 +4,7 @@
   "description": "upload team videos, variable speed playback, team privacy",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
