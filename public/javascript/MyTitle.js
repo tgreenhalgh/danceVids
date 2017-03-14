@@ -5,9 +5,11 @@
 import React from 'react';
 
 // create the `stamp`
+/*
+  not needed with jsx
 var div = React.DOM.div;
 var h1 = React.DOM.h1;
-
+*/
 // note: everything to do with MyTitle is here
 // so makes for easier debugging if there's an error
 // with MyTitle
@@ -35,6 +37,8 @@ var MyTitle = React.createClass({
       // note: { } interpolates what's in them,
       // i.e. is a javascript expression
       // anything else just shows up
+      // note: ,div. gets interpolated as
+      // React.createElement('div', null, ...)
       <div>
         <h1 style= { style }>
           { this.props.title.toUpperCase() }
